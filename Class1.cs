@@ -30,5 +30,13 @@ namespace FizzBuzzCSharp
             else
                 return false;
         }
+
+        public bool DivisibleByThreeAndFive(int number)
+        {
+            if (number % 15 == 0)
+                return true;
+            else
+                return false;
+        }
     }
 }
