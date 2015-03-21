@@ -41,9 +41,5 @@ namespace FizzBuzzCSharp
             Assert.IsTrue(fizzbuzz.DivisibleByThreeAndFive(15));
             Assert.IsFalse(fizzbuzz.DivisibleByThreeAndFive(3));
         }
-
-    
-
-
     }
 }
