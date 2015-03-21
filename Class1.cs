@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework;
+//using NUnit.Framework;
 
 namespace FizzBuzzCSharp
 {
@@ -12,7 +12,8 @@ namespace FizzBuzzCSharp
     {
         [STAThread]
         static void Main()
-        { 
+        {
+            new Fizzbuzz().Game();
         }
 
         public bool DivisibleByThree(int number)
@@ -38,5 +39,33 @@ namespace FizzBuzzCSharp
             else
                 return false;
         }
+
+        public void Plays(int number)
+        {
+            if (DivisibleByThreeAndFive(number))
+            {
+                Console.WriteLine("Fizzbuzz");
+            }
+            else if (DivisibleByThree(number))
+            {
+                Console.WriteLine("Fizz");
+            }
+            else if (DivisibleByFive(number))
+            {
+                Console.WriteLine("Buzz");
+            }
+            else
+            {
+                Console.WriteLine(number);
+            }
+        }
+
+        public void Game()
+        {
+            for (int i = 1; i < 101; i++)
+            {
+                this.Plays(i);
+            }
+        }
     }
-}
+}   

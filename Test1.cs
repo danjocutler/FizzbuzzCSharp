@@ -24,38 +24,26 @@ namespace FizzBuzzCSharp
         [Test]
         public void DivisibleByThree()
         {
-            fizzbuzz.DivisibleByThree(3);
-  
-            Assert.IsTrue(true);
-
-            fizzbuzz.DivisibleByThree(1);
-
-            Assert.IsFalse(false);
+            Assert.IsTrue(fizzbuzz.DivisibleByThree(3));
+            Assert.IsFalse(fizzbuzz.DivisibleByThree(1));
         }
 
         [Test]
         public void DivisibleByFive()
         {
-            fizzbuzz.DivisibleByFive(5);
-
-            Assert.IsTrue(true);
-
-            fizzbuzz.DivisibleByFive(1);
-
-            Assert.IsFalse(false);        
+            Assert.IsTrue(fizzbuzz.DivisibleByFive(5));
+            Assert.IsFalse(fizzbuzz.DivisibleByFive(1));
         }
 
         [Test]
         public void DivisibleByThreeAndFive()
         {
-            fizzbuzz.DivisibleByThreeAndFive(15);
-
-            Assert.IsTrue(true);
-
-            fizzbuzz.DivisibleByThreeAndFive(3);
-
-            Assert.IsFalse(false);
+            Assert.IsTrue(fizzbuzz.DivisibleByThreeAndFive(15));
+            Assert.IsFalse(fizzbuzz.DivisibleByThreeAndFive(3));
         }
+
+    
+
 
     }
 }
