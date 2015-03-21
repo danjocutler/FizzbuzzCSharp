@@ -41,5 +41,11 @@ namespace FizzBuzzCSharp
             Assert.IsTrue(fizzbuzz.DivisibleByThreeAndFive(15));
             Assert.IsFalse(fizzbuzz.DivisibleByThreeAndFive(3));
         }
+        [Test]
+        [Ignore ("Can't quite get the test right for this")]
+        public void Plays()
+        {
+            //Assert.AreEqual(fizzbuzz.Plays(15), "Fizzbuzz");
+        }
     }
 }
