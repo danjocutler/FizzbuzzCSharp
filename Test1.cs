@@ -45,7 +45,7 @@ namespace FizzBuzzCSharp
         [Ignore ("Can't quite get the test right for this")]
         public void Plays()
         {
-            //Assert.AreEqual(fizzbuzz.Plays(15), "Fizzbuzz");
+            Assert.Contains(fizzbuzz.Plays(15), Is.StringContaining("Fizzbuzz"));
         }
     }
 }
