@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
-//using NUnit.Framework;
 
 namespace FizzBuzzCSharp
 {
 
     public class Fizzbuzz
     {
-        [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             new Fizzbuzz().Game();
         }
@@ -62,9 +61,12 @@ namespace FizzBuzzCSharp
 
         public void Game()
         {
+            var game = new Fizzbuzz();
+
             for (int i = 1; i < 101; i++)
             {
-                this.Plays(i);
+                game.Plays(i);
+                Thread.Sleep(250);
             }
         }
     }
